@@ -1,1 +1,1 @@
-console.log("Some log alert");
+(()=>{"use strict";(function(){const e=document.querySelector("#content"),t=document.createElement("div");t.id="header",t.textContent="header",e.appendChild(t);const n=document.createElement("div");n.textContent="container-div",e.appendChild(n);const o=document.createElement("footer");o.textContent="@n0xx 2022",e.appendChild(o)})(),console.log("Some log alert")})();
