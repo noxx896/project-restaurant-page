@@ -9,6 +9,7 @@ const home = function() {
     content.appendChild(header);
 
     const container = document.createElement('div');
+    container.id = 'container';
     container.textContent = 'container-div';
     content.appendChild(container);
 
