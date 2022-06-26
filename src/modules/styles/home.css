@@ -10,6 +10,13 @@ html, body {
     background-color: #f87171;
 }
 
+#sections-div {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+
+}
+
 #container {
     background-color: #fcd34d;
 }
