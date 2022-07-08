@@ -25,9 +25,15 @@ content.appendChild(footer);
 // Header elements
 const logo_div = document.createElement('div');
 logo_div.id = 'logo-div';
-logo_div.textContent = 'EL GOLOSITO';
+logo_div.textContent = 'El Golosito';
 header.appendChild(logo_div);
-    
+
+const chef = document.createElement('div');
+chef.id = 'chef-div';
+chef.textContent = 'NO CHEF KDJ';
+logo_div.appendChild(chef);
+chef.style.backgroundImage = "url('/home/n0xx/Documentos/top/javascript-path/project-restaurant-page/src/modules/assets/chef.jpg')"; 
+
 const sections_div = document.createElement('div');
 sections_div.id = 'sections-div';
 header.appendChild(sections_div);
@@ -58,7 +64,12 @@ about_btn.addEventListener('click', ()=> {
     document.getElementById('about-btn').style.pointerEvents = 'none';
     document.getElementById('menu-btn').style.pointerEvents = 'auto';
     document.getElementById('home-btn').style.pointerEvents = 'auto';
-
+    
+    document.getElementById('about-btn').classList.add('selected-div');
+    document.getElementById('menu-btn').classList.remove('selected-div');
+    document.getElementById('home-btn').classList.remove('selected-div');
+   
+ 
 });
 
 menu_btn.addEventListener('click', ()=> {
@@ -69,6 +80,12 @@ menu_btn.addEventListener('click', ()=> {
     document.getElementById('menu-btn').style.pointerEvents = 'none';
     document.getElementById('about-btn').style.pointerEvents = 'auto';
     document.getElementById('home-btn').style.pointerEvents = 'auto';
+
+    document.getElementById('about-btn').classList.remove('selected-div');
+    document.getElementById('menu-btn').classList.add('selected-div');
+    document.getElementById('home-btn').classList.remove('selected-div');
+   
+
 });
 
 home_btn.addEventListener('click', ()=> {
@@ -79,6 +96,12 @@ home_btn.addEventListener('click', ()=> {
     document.getElementById('home-btn').style.pointerEvents = 'none';
     document.getElementById('menu-btn').style.pointerEvents = 'auto';
     document.getElementById('about-btn').style.pointerEvents = 'auto';
+
+    document.getElementById('about-btn').classList.remove('selected-div');
+    document.getElementById('menu-btn').classList.remove('selected-div');
+    document.getElementById('home-btn').classList.add('selected-div');
+   
+
 });
 
 
