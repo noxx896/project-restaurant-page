@@ -1,7 +1,7 @@
 // Restaurant Home Page
 
 const home = function() {
-    container.style.backgroundImage =  "url('/home/n0xx/Documentos/top/javascript-path/project-restaurant-page/src/modules/assets/llapin2.jpg')"; 
+    container.style.backgroundImage = "url('/home/n0xx/Documentos/top/javascript-path/project-restaurant-page/src/modules/assets/llapin2.jpg')"; 
   
     // Container elements
     const description = document.createElement('div');
