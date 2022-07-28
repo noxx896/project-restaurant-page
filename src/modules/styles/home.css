@@ -15,14 +15,26 @@ html, body {
 
 #header {
    font-size: 2rem;
-   font-family: 'Dancing Script', cursive;
    background-color: #dc2626;
 }
 
 #logo-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 4rem;
     text-align: center;
+}
+
+#name-div {
+   font-family: 'Dancing Script', cursive;
+}
+
+#logo {
+    height: 6rem;
+    width: 6rem;
 }
 
 #sections-div {
