@@ -1,6 +1,7 @@
 import home from './modules/pages/home'
 import about from './modules/pages/about'
 import menu from './modules/pages/menu'
+import chef from './modules/assets/chef2.png'
 import './modules/styles/home.css'
 import './modules/styles/about.css'
 import './modules/styles/menu.css'
@@ -25,14 +26,18 @@ content.appendChild(footer);
 // Header elements
 const logo_div = document.createElement('div');
 logo_div.id = 'logo-div';
-logo_div.textContent = 'El Golosito';
 header.appendChild(logo_div);
 
-const chef = document.createElement('div');
-chef.id = 'chef-div';
-chef.textContent = 'NO CHEF KDJ';
-logo_div.appendChild(chef);
-chef.style.backgroundImage = "url('/home/n0xx/Documentos/top/javascript-path/project-restaurant-page/src/modules/assets/chef.jpg')"; 
+const logo = document.createElement('img');
+logo.id = 'logo';
+//logo.textContent = 'Chef logo';
+logo_div.appendChild(logo);
+logo.src = chef; 
+
+const name = document.createElement('div');
+name.id = 'name-div';
+name.textContent = 'El Golosito';
+logo_div.appendChild(name);
 
 const sections_div = document.createElement('div');
 sections_div.id = 'sections-div';
@@ -103,9 +108,6 @@ home_btn.addEventListener('click', ()=> {
    
 
 });
-
-
-
 
 
 console.log('Some log alert');
