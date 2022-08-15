@@ -1,6 +1,7 @@
 
 #container-menu {
     background-color: blue;
+    display: flex;
     font-size: 2rem;
     color: white; 
 }
